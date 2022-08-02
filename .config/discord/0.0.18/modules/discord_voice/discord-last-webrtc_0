@@ -1,0 +1,303 @@
+[2022-08-01 15:22:58.830] [37811] (engine.cpp:230): Time: Mon Aug  1 15:22:58 2022 -03 logLevel:2
+[2022-08-01 15:22:59.218] [37811] (audio_device_impl.cc:83): Create
+[2022-08-01 15:22:59.218] [37811] (audio_device_impl.cc:91): CreateForTest
+[2022-08-01 15:22:59.276] [37811] (audio_device_buffer.cc:64): AudioDeviceBuffer::ctor
+[2022-08-01 15:22:59.276] [37811] (audio_device_impl.cc:129): AudioDeviceModuleImpl
+[2022-08-01 15:22:59.276] [37811] (audio_device_impl.cc:133): CheckPlatform
+[2022-08-01 15:22:59.276] [37811] (audio_device_impl.cc:144): current platform is Linux
+[2022-08-01 15:22:59.276] [37811] (audio_device_impl.cc:163): CreatePlatformSpecificObjects
+[2022-08-01 15:22:59.276] [37811] (audio_device_impl.cc:992): PlatformAudioLayer
+[2022-08-01 15:22:59.276] [37811] (audio_device_impl.cc:299): PulseAudio support is enabled.
+[2022-08-01 15:22:59.276] [37811] (audio_mixer_manager_pulse_linux.cc:57): AudioMixerManagerLinuxPulse created
+[2022-08-01 15:22:59.276] [37811] (audio_device_pulse_linux.cc:81): AudioDeviceLinuxPulse created
+[2022-08-01 15:22:59.276] [37811] (audio_device_impl.cc:304): Linux PulseAudio APIs will be utilized
+[2022-08-01 15:22:59.276] [37811] (audio_device_impl.cc:345): AttachAudioBuffer
+[2022-08-01 15:22:59.276] [37811] (audio_device_buffer.cc:180): SetRecordingSampleRate(0)
+[2022-08-01 15:22:59.276] [37811] (audio_device_buffer.cc:186): SetPlayoutSampleRate(0)
+[2022-08-01 15:22:59.276] [37811] (audio_device_buffer.cc:200): SetRecordingChannels(0)
+[2022-08-01 15:22:59.276] [37811] (audio_device_buffer.cc:206): SetPlayoutChannels(0)
+[2022-08-01 15:22:59.276] [37811] (audio_engine.cpp:48): Creating audio engine: standard
+[2022-08-01 15:22:59.277] [37811] (audio_device_impl.cc:365): Init
+[2022-08-01 15:23:00.203] [37811] (audio_coding.cpp:143): Using software Opus decoder
+[2022-08-01 15:23:00.203] [37811] (audio_coding.cpp:160): Using software Opus encoder
+[2022-08-01 15:23:00.585] [37811] (audio_processing_impl.cc:274): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2022-08-01 15:23:00.791] [37811] (audio_processing_impl.cc:274): Injected APM submodules:
+Echo control factory: 1
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2022-08-01 15:23:01.154] [37811] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2022-08-01 15:23:01.154] [37811] (audio_device_impl.cc:896): RegisterAudioCallback
+[2022-08-01 15:23:01.154] [37811] (audio_device_buffer.cc:81): RegisterAudioCallback
+[2022-08-01 15:23:02.543] [37811] (audio_device_impl.cc:355): ActiveAudioLayer
+[2022-08-01 15:23:03.062] [37811] (audio_engine.cpp:145): Setting audio input device: 'default'
+[2022-08-01 15:23:03.062] [37811] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2022-08-01 15:23:03.062] [37811] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2022-08-01 15:23:03.062] [37811] (audio_device_impl.cc:777): SetRecordingDevice(0)
+[2022-08-01 15:23:03.063] [37811] (audio_device_impl.cc:567): StereoRecordingIsAvailable
+[2022-08-01 15:23:03.063] [37811] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2022-08-01 15:23:03.064] [37811] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2022-08-01 15:23:03.064] [37811] (audio_device_impl.cc:579): SetStereoRecording(0)
+[2022-08-01 15:23:03.064] [37811] (audio_device_buffer.cc:200): SetRecordingChannels(1)
+[2022-08-01 15:23:03.064] [37811] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2022-08-01 15:23:03.064] [37811] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2022-08-01 15:23:03.064] [37811] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2022-08-01 15:23:03.064] [37811] (audio_engine.cpp:156): Setting audio output device: 'default'
+[2022-08-01 15:23:03.064] [37811] (audio_device_impl.cc:709): SetPlayoutDevice(0)
+[2022-08-01 15:23:03.064] [37811] (audio_device_impl.cc:613): StereoPlayoutIsAvailable
+[2022-08-01 15:23:03.064] [37811] (audio_mixer_manager_pulse_linux.cc:189): SpeakerIsInitialized
+[2022-08-01 15:23:03.065] [37811] (audio_device_impl.cc:620): output: 1
+[2022-08-01 15:23:03.065] [37811] (audio_device_impl.cc:625): SetStereoPlayout(1)
+[2022-08-01 15:23:03.065] [37811] (audio_device_buffer.cc:206): SetPlayoutChannels(2)
+[2022-08-01 15:23:03.065] [37811] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2022-08-01 15:23:03.065] [37811] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2022-08-01 15:23:03.065] [37811] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2022-08-01 15:23:03.068] [37782] (discord.cpp:551): JS console: ["%c[default]","[BUILD INFO] Release Channel: stable, Build Number: 138734, Version Hash: 047115f6e9ae2e1d4bdca310f365b6e8e122d5ce"]
+[2022-08-01 15:23:03.269] [37782] (discord.cpp:551): JS console: ["%c[default]","[NATIVE INFO] host 0.0.18, modules: discord_desktop_core: 1, discord_erlpack: 1, discord_spellcheck: 1, discord_utils: 1, discord_voice: 1, discord_game_utils: 1, discord_rpc: 1"]
+[2022-08-01 15:23:03.747] [37811] (audio_engine.cpp:145): Setting audio input device: 'default'
+[2022-08-01 15:23:03.747] [37811] (audio_device_impl.cc:827): RecordingIsInitialized
+[2022-08-01 15:23:03.747] [37811] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2022-08-01 15:23:03.747] [37811] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2022-08-01 15:23:03.747] [37811] (audio_device_impl.cc:777): SetRecordingDevice(0)
+[2022-08-01 15:23:03.748] [37811] (audio_device_impl.cc:567): StereoRecordingIsAvailable
+[2022-08-01 15:23:03.748] [37811] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2022-08-01 15:23:03.748] [37811] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2022-08-01 15:23:03.748] [37811] (audio_device_impl.cc:579): SetStereoRecording(0)
+[2022-08-01 15:23:03.748] [37811] (audio_device_buffer.cc:200): SetRecordingChannels(1)
+[2022-08-01 15:23:03.748] [37811] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2022-08-01 15:23:03.748] [37811] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2022-08-01 15:23:03.748] [37811] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2022-08-01 15:23:03.748] [37811] (audio_engine.cpp:156): Setting audio output device: 'default'
+[2022-08-01 15:23:03.748] [37811] (audio_device_impl.cc:821): PlayoutIsInitialized
+[2022-08-01 15:23:03.748] [37811] (audio_device_impl.cc:709): SetPlayoutDevice(0)
+[2022-08-01 15:23:03.749] [37811] (audio_device_impl.cc:613): StereoPlayoutIsAvailable
+[2022-08-01 15:23:03.749] [37811] (audio_mixer_manager_pulse_linux.cc:189): SpeakerIsInitialized
+[2022-08-01 15:23:03.749] [37811] (audio_device_impl.cc:620): output: 1
+[2022-08-01 15:23:03.749] [37811] (audio_device_impl.cc:625): SetStereoPlayout(1)
+[2022-08-01 15:23:03.749] [37811] (audio_device_buffer.cc:206): SetPlayoutChannels(2)
+[2022-08-01 15:23:03.779] [37782] (discord.cpp:551): JS console: ["%c[Spellchecker]","sh is not a valid locale."]
+[2022-08-01 15:23:04.157] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:23:06.547] [37782] (discord.cpp:551): JS console: ["%c[Spellchecker]","Switching to pt-BR","(available)"]
+[2022-08-01 15:23:06.596] [37782] (discord.cpp:551): JS console: ["[FAST CONNECT] connected in 15576ms"]
+[2022-08-01 15:23:07.160] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:23:10.122] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow batch emitChanges took 165ms recentActions:","I18N_LOAD_SUCCESS"]
+[2022-08-01 15:23:10.123] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow dispatch on I18N_LOAD_SUCCESS: 166ms"]
+[2022-08-01 15:23:10.163] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:23:12.059] [37782] (discord.cpp:551): JS console: ["Deprecation warning: value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged and will be removed in an upcoming major release. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.\nArguments: \n[0] _isAMomentObject: true, _isUTC: false, _useUTC: false, _l: undefined, _i: 5/13/2022 10:00 -0800, _f: undefined, _strict: undefined, _locale: [object Object]\nError\n    at Function.createFromInputFallback (https://discord.com/assets/7741e9f24248b43c1ed0.js:5770:330)\n    at Vn (https://discord.com/assets/7741e9f24248b43c1ed0.js:5796:696)\n    at Kn (https://discord.com/assets/7741e9f24248b43c1ed0.js:5799:356)\n    at Wn (https://discord.com/assets/7741e9f24248b43c1ed0.js:5799:199)\n    at jn (https://discord.com/assets/7741e9f24248b43c1ed0.js:5798:886)\n    at zn (https://discord.com/assets/7741e9f24248b43c1ed0.js:5799:697)\n    at Xn (https://discord.com/assets/7741e9f24248b43c1ed0.js:5799:731)\n    at i (https://discord.com/assets/7741e9f24248b43c1ed0.js:5766:961)\n    at Object.962314 (https://discord.com/assets/aec87eb5b7d3105ec771.js:1794:332)\n    at l (https://discord.com/assets/971bfa9b11cc42c5181c.js:1:154)\n    at Object.72840 (https://discord.com/assets/aec87eb5b7d3105ec771.js:1625:158)\n    at l (https://discord.com/assets/971bfa9b11cc42c5181c.js:1:154)\n    at Object.900993 (https://discord.com/assets/aec87eb5b7d3105ec771.js:69:163)\n    at l (https://discord.com/assets/971bfa9b11cc42c5181c.js:1:154)\n    at Object.101327 (https://discord.com/assets/aec87eb5b7d3105ec771.js:174:57)\n    at l (https://discord.com/assets/971bfa9b11cc42c5181c.js:1:154)\n    at Object.206566 (https://discord.com/assets/aec87eb5b7d3105ec771.js:180:851)\n    at l (https://discord.com/assets/971bfa9b11cc42c5181c.js:1:154)\n    at Object.998872 (https://discord.com/assets/2c50f7d42621d34bffdf.js:218:237)\n    at Function.l (https://discord.com/assets/971bfa9b11cc42c5181c.js:1:154)"]
+[2022-08-01 15:23:12.813] [37782] (discord.cpp:551): JS console: ["%c[CloudSyncUtils]","CloudSync is not supported on this platform"]
+[2022-08-01 15:23:13.166] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:23:13.262] [37782] (discord.cpp:551): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2022-08-01 15:23:16.170] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:23:16.362] [37782] (discord.cpp:551): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2022-08-01 15:23:16.372] [37782] (discord.cpp:551): JS console: ["[FAST CONNECT] successfully took over websocket, state:","[object Object]"]
+[2022-08-01 15:23:16.373] [37782] (discord.cpp:551): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 9 ms"]
+[2022-08-01 15:23:16.374] [37782] (discord.cpp:551): JS console: ["%c[ConnectionStore]","handleIdentify called","[object Object]"]
+[2022-08-01 15:23:16.375] [37782] (discord.cpp:551): JS console: ["%c[GatewaySocket]","[IDENTIFY]"]
+[2022-08-01 15:23:16.419] [37782] (discord.cpp:551): JS console: ["%c[GatewaySocket]","[HELLO] via [\"gateway-prd-main-fs30\",{\"micros\":0.0}], heartbeat interval: 41250, took 54 ms"]
+[2022-08-01 15:23:16.519] [37782] (discord.cpp:551): JS console: ["%c[RPCServer:WSS]","Starting on 6463"]
+[2022-08-01 15:23:16.528] [37782] (discord.cpp:551): JS console: ["%c[RPCServer:IPC]","Starting on /run/user/1000/discord-ipc-0"]
+[2022-08-01 15:23:17.755] [37782] (discord.cpp:551): JS console: ["The vm module of Node.js is deprecated in the renderer process and will be removed."]
+[2022-08-01 15:23:18.926] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Injecting BD Styles"]
+[2022-08-01 15:23:18.932] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing DataStore"]
+[2022-08-01 15:23:18.980] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing LocaleManager"]
+[2022-08-01 15:23:18.998] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Performing incompatibility checks"]
+[2022-08-01 15:23:18.998] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Getting update information"]
+[2022-08-01 15:23:19.001] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing Settings"]
+[2022-08-01 15:23:19.007] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing DOMManager"]
+[2022-08-01 15:23:19.007] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Waiting for connection..."]
+[2022-08-01 15:23:19.173] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:23:20.820] [37782] (discord.cpp:551): JS console: ["%c[GatewaySocket]","[READY] took 4456ms, via [\"gateway-prd-main-fs30\",{\"micros\":449682,\"calls\":[\"discord-sessions-blue-prd-2-163\",{\"micros\":436708,\"calls\":[\"start_session\",{\"micros\":201621,\"calls\":[\"discord-api-f8dd45c-kgdrm\",{\"micros\":185745,\"calls\":[\"get_user\",{\"micros\":9425},\"add_authorized_ip\",{\"micros\":6120},\"get_guilds\",{\"micros\":9485},\"private_channels\",{\"micros\":17225},\"read_states\",{\"micros\":13434},\"coros_wait\",{\"micros\":8839},\"aliases\",{\"micros\":58735},\"affine_user_ids\",{\"micros\":30197},\"experiments\",{\"micros\":5927}]}]},\"guilds_connect\",{\"micros\":92581,\"calls\":[]},\"presence_connect\",{\"micros\":1,\"calls\":[]}]}]}] as 39c0533102836589aa8b58ee606f469d"]
+[2022-08-01 15:23:20.894] [37782] (discord.cpp:551): JS console: ["%c[AuthenticationStore]","handleConnectionOpen called","[object Object]"]
+[2022-08-01 15:23:20.981] [37782] (discord.cpp:551): JS console: ["%c[Spotify]","WS Connecting"]
+[2022-08-01 15:23:20.984] [37782] (discord.cpp:551): JS console: ["%c[Spotify]","Added account: 44bumkghovegzfm8uu60e3oyi"]
+[2022-08-01 15:23:21.045] [37782] (discord.cpp:551): JS console: ["%c[NativeDispatchUtils]","Tried getting Dispatch instance before instantiated"]
+[2022-08-01 15:23:21.089] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow dispatch on CONNECTION_OPEN: 198ms"]
+[2022-08-01 15:23:22.176] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:23:22.543] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow batch emitChanges took 1442ms recentActions:",""]
+[2022-08-01 15:23:22.547] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing ReactComponents"]
+[2022-08-01 15:23:22.551] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing ComponentPatcher"]
+[2022-08-01 15:23:22.804] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing Editor"]
+[2022-08-01 15:23:23.153] [37782] (discord.cpp:551): JS console: ["%c[GatewaySocket]","[READY_SUPPLEMENTAL] took 6790ms"]
+[2022-08-01 15:23:23.307] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow batch emitChanges took 129ms recentActions:",""]
+[2022-08-01 15:23:23.476] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow dispatch on MESSAGE_CREATE: 121ms"]
+[2022-08-01 15:23:24.656] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing Builtins"]
+[2022-08-01 15:23:24.657] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Custom CSS]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Enabled"]
+[2022-08-01 15:23:24.660] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Custom CSS]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Starting to watch content."]
+[2022-08-01 15:23:24.664] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Emotes]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Enabled"]
+[2022-08-01 15:23:24.763] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Emotes]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","TwitchGlobal"]
+[2022-08-01 15:23:24.824] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [PublicServers]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Enabled"]
+[2022-08-01 15:23:24.834] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Loading Plugins"]
+[2022-08-01 15:23:24.988] [37782] (discord.cpp:551): JS console: ["%c[BDFDB] %c(v2.4.7)","color: #3a71c1; font-weight: 700;","color: #666; font-weight: 600; font-size: 11px;","Loading Library"]
+[2022-08-01 15:23:25.180] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:23:27.902] [37782] (discord.cpp:551): JS console: ["%c[BugReportHelper]%c","color: #3a71c1; font-weight: 700;","","version 1.0.4 has started."]
+[2022-08-01 15:23:28.183] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:23:29.393] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [PluginManager]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Starting to watch plugin addons."]
+[2022-08-01 15:23:29.394] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Loading Themes"]
+[2022-08-01 15:23:29.413] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [ThemeManager]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Starting to watch theme addons."]
+[2022-08-01 15:23:29.414] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Removing Loading Icon"]
+[2022-08-01 15:23:29.415] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Collecting Startup Errors"]
+[2022-08-01 15:23:29.957] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Emotes]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","BTTV"]
+[2022-08-01 15:23:30.529] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow dispatch on GAMES_DATABASE_UPDATE: 149ms"]
+[2022-08-01 15:23:30.589] [37782] (discord.cpp:551): JS console: ["%c[Spotify]","Updated account access token: 44bumkghovegzfm8uu60e3oyi"]
+[2022-08-01 15:23:31.186] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:23:31.492] [37782] (discord.cpp:551): JS console: ["%c[BetterDiscord]%c [Emotes]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","FrankerFaceZ"]
+[2022-08-01 15:23:34.190] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:23:35.363] [37946] (region_latency_tester.cpp:71): Sending 5 latency test pings to region brazil
+[2022-08-01 15:23:35.364] [37946] (region_latency_tester.cpp:71): Sending 5 latency test pings to region buenos-aires
+[2022-08-01 15:23:35.364] [37946] (region_latency_tester.cpp:71): Sending 5 latency test pings to region santiago
+[2022-08-01 15:23:35.364] [37946] (region_latency_tester.cpp:71): Sending 5 latency test pings to region atlanta
+[2022-08-01 15:23:35.364] [37946] (region_latency_tester.cpp:71): Sending 5 latency test pings to region southafrica
+[2022-08-01 15:23:35.723] [37946] (region_latency_tester.cpp:270): Average RTT for region brazil is 161
+[2022-08-01 15:23:35.745] [37946] (region_latency_tester.cpp:270): Average RTT for region buenos-aires is 51.5
+[2022-08-01 15:23:35.745] [37946] (region_latency_tester.cpp:270): Average RTT for region santiago is 71.5
+[2022-08-01 15:23:35.745] [37946] (region_latency_tester.cpp:270): Average RTT for region atlanta is 138
+[2022-08-01 15:23:35.745] [37946] (region_latency_tester.cpp:270): Average RTT for region southafrica is 357.25
+[2022-08-01 15:23:35.749] [37782] (discord.cpp:551): JS console: ["%c[RTCLatencyTestManager]","RTC region latency test completed: ","buenos-aires,santiago,atlanta,brazil,southafrica"]
+[2022-08-01 15:23:36.110] [37782] (discord.cpp:551): JS console: ["%c[Spotify]","WS Connected"]
+[2022-08-01 15:23:36.479] [37782] (discord.cpp:551): JS console: ["%c[Spotify]","Devices updated for 44bumkghovegzfm8uu60e3oyi:",""]
+[2022-08-01 15:23:36.565] [37782] (discord.cpp:551): JS console: ["%c[Spotify]","Profile updated for 44bumkghovegzfm8uu60e3oyi: isPremium = false"]
+[2022-08-01 15:23:37.193] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:23:40.196] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:23:43.200] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:23:46.203] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:23:49.206] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:23:52.210] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:23:55.213] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:23:58.216] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:24:01.220] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:24:04.223] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:24:07.226] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:24:10.230] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:24:13.233] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:24:16.236] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:24:19.240] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:24:22.243] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:24:24.984] [37782] (discord.cpp:551): JS console: ["%c[BDFDB] %c(v2.4.7)","color: #3a71c1; font-weight: 700;","color: #666; font-weight: 600; font-size: 11px;","Finished loading Library"]
+[2022-08-01 15:24:25.246] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:24:25.748] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow batch emitChanges took 133ms recentActions:","WINDOW_FOCUS"]
+[2022-08-01 15:24:25.754] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow dispatch on WINDOW_FOCUS: 135ms"]
+[2022-08-01 15:24:26.014] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow batch emitChanges took 107ms recentActions:","WINDOW_FOCUS"]
+[2022-08-01 15:24:26.014] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow dispatch on WINDOW_FOCUS: 109ms"]
+[2022-08-01 15:24:28.250] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:24:31.253] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:24:34.257] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:24:37.260] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:24:40.263] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:24:42.115] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow batch emitChanges took 209ms recentActions:","WINDOW_FOCUS"]
+[2022-08-01 15:24:42.117] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow dispatch on WINDOW_FOCUS: 215ms"]
+[2022-08-01 15:24:42.352] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow batch emitChanges took 229ms recentActions:","WINDOW_FOCUS"]
+[2022-08-01 15:24:42.352] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow dispatch on WINDOW_FOCUS: 232ms"]
+[2022-08-01 15:24:42.640] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow batch emitChanges took 133ms recentActions:","WINDOW_FOCUS"]
+[2022-08-01 15:24:42.646] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow dispatch on WINDOW_FOCUS: 136ms"]
+[2022-08-01 15:24:43.267] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:24:45.955] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow batch emitChanges took 291ms recentActions:","WINDOW_FOCUS"]
+[2022-08-01 15:24:45.957] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow dispatch on WINDOW_FOCUS: 296ms"]
+[2022-08-01 15:24:46.132] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow batch emitChanges took 166ms recentActions:","WINDOW_FOCUS"]
+[2022-08-01 15:24:46.133] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow dispatch on WINDOW_FOCUS: 174ms"]
+[2022-08-01 15:24:46.270] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:24:46.330] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow batch emitChanges took 140ms recentActions:","WINDOW_FOCUS"]
+[2022-08-01 15:24:46.331] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow dispatch on WINDOW_FOCUS: 141ms"]
+[2022-08-01 15:24:49.273] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:24:50.428] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow batch emitChanges took 242ms recentActions:","WINDOW_FOCUS"]
+[2022-08-01 15:24:50.428] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow dispatch on WINDOW_FOCUS: 244ms"]
+[2022-08-01 15:24:50.576] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow batch emitChanges took 146ms recentActions:","WINDOW_FOCUS"]
+[2022-08-01 15:24:50.577] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow dispatch on WINDOW_FOCUS: 148ms"]
+[2022-08-01 15:24:50.782] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow batch emitChanges took 140ms recentActions:","WINDOW_FOCUS"]
+[2022-08-01 15:24:50.783] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow dispatch on WINDOW_FOCUS: 140ms"]
+[2022-08-01 15:24:50.952] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow batch emitChanges took 156ms recentActions:","WINDOW_FOCUS"]
+[2022-08-01 15:24:50.952] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow dispatch on WINDOW_FOCUS: 157ms"]
+[2022-08-01 15:24:52.276] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:24:55.280] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:24:57.425] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow batch emitChanges took 178ms recentActions:","WINDOW_FOCUS"]
+[2022-08-01 15:24:57.427] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow dispatch on WINDOW_FOCUS: 185ms"]
+[2022-08-01 15:24:58.283] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:25:01.286] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:25:04.290] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:25:07.293] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:25:10.296] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:25:11.034] [37782] (discord.cpp:551): JS console: ["%c[BDFDB] %c(v2.4.8)","color: #3a71c1; font-weight: 700;","color: #666; font-weight: 600; font-size: 11px;","Loading Library"]
+[2022-08-01 15:25:13.300] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:25:16.303] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:25:19.306] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:25:22.310] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:25:23.035] [37782] (discord.cpp:551): JS console: ["%c[RPCServer:IPC]","Socket Opened: 4"]
+[2022-08-01 15:25:23.258] [37782] (discord.cpp:551): JS console: ["%c[RPCServer:IPC]","Socket Emit: 4","[object Object]"]
+[2022-08-01 15:25:24.832] [37782] (discord.cpp:551): JS console: ["%c[RPCServer:IPC]","Socket Message: 4","[object Object]"]
+[2022-08-01 15:25:25.314] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:25:25.437] [37782] (discord.cpp:551): JS console: ["%c[RPCServer:IPC]","Socket Emit: 4","[object Object]"]
+[2022-08-01 15:25:28.317] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:25:29.800] [37782] (discord.cpp:551): JS console: ["%c[BDFDB] %c(v2.4.8)","color: #3a71c1; font-weight: 700;","color: #666; font-weight: 600; font-size: 11px;","Finished loading Library"]
+[2022-08-01 15:25:30.145] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow batch emitChanges took 125ms recentActions:","WINDOW_FOCUS"]
+[2022-08-01 15:25:30.146] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow dispatch on WINDOW_FOCUS: 134ms"]
+[2022-08-01 15:25:31.320] [37812] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-01 15:25:32.599] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.600] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.600] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.601] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.601] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.602] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.602] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.603] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.603] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.603] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.604] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.604] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.605] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.605] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.606] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.606] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.613] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.614] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.615] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.616] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.616] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.617] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.617] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.618] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.619] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.620] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.620] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.621] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.621] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.621] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.622] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.622] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.622] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.623] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.625] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.626] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.627] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.627] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.630] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.632] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.634] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.637] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.639] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.644] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.646] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.650] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.653] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.657] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.659] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.661] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.664] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.668] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.669] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.671] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.674] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.675] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.677] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.680] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.682] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.683] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.683] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.684] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.690] [37782] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-08-01 15:25:32.701] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow batch emitChanges took 103ms recentActions:","WINDOW_UNLOAD"]
+[2022-08-01 15:25:32.702] [37782] (discord.cpp:551): JS console: ["%c[Flux]","Slow dispatch on WINDOW_UNLOAD: 103ms"]
