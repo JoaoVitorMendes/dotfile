@@ -49,5 +49,9 @@ call plug#begin()
     "blank line
     Plug 'lukas-reineke/indent-blankline.nvim'
     
+    "for syntax
+    Plug 'nvim-treesitter/nvim-treesitter'
+    Plug 'm-demare/hlargs.nvim'
+    
 endif
 call plug#end()
