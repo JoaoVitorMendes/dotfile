@@ -45,6 +45,8 @@ call plug#begin()
 
     "lua line
     Plug 'nvim-lualine/lualine.nvim'
-
+    
+    "blank line
+    Plug 'lukas-reineke/indent-blankline.nvim'
 endif
 call plug#end()
