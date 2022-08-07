@@ -48,5 +48,6 @@ call plug#begin()
     
     "blank line
     Plug 'lukas-reineke/indent-blankline.nvim'
+    
 endif
 call plug#end()
