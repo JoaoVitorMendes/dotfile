@@ -38,3 +38,14 @@ nmap tv :vsplit<CR>
 
 "chamar um comando curto
 "nmap tc :!
+
+
+"sair forcado
+nmap <C-q> :q! <CR>
+
+"sair e salvar
+nmap <C-w> :w <CR>
+"sair e salvar forcado
+nmap <C-c> :wq! <CR>
+"sair
+nmap <C-e> :q <CR>
