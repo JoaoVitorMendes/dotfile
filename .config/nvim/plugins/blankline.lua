@@ -22,7 +22,7 @@ vim.cmd [[highlight IndentBlanklineIndent4 guifg=#800C9C gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent5 guifg=#112257 gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent6 guifg=#3E2262 gui=nocombine]]
 
-vim.opt.list = true
+vim.opt.list = false
 vim.opt.listchars:append "space:."
 --vim.opt.listchars:append "eol: "
 
