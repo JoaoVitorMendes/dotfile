@@ -1,0 +1,9 @@
+markup_highlight = 'foreground="#dc69ff" underline="double"'
+icon_size = 25
+margin_top = 50
+
+# margin_bottom = 20
+# margin_left = 0
+# margin_right = 0
+width = 150
+#height = 450

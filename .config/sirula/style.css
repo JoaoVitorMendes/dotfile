@@ -1,0 +1,87 @@
+/*
+Sirula uses GTK and can be themed with CSS (https://developer.gnome.org/gtk3/stable/chap-css-overview.html)
+This theme was tested on top of Adwaita-Dark.
+See consts.rs for a list of defined classes and names.
+
+The style.css can be omitted but sirula will not look very nice since there are no hardcoded margins.
+
+To remove the global theme completely, use
+* { all: unset; }
+*/
+
+* {
+    font-family: Iosevka;
+    font-size: 13px;
+}
+
+.background {
+    background: transparent;
+}
+
+#root-box, .background, #app-list, .overlay-indicator {
+    background: transparent;
+}
+
+.app-row {
+    transition: unset;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 0 3px;
+    background-clip: padding-box;
+}
+
+.app-row:focus {
+    outline: unset;
+}
+
+.app-row:hover:selected {
+    background-color: transparent;
+    color: #152331
+}
+
+.app-row:hover {
+    background-color: transparent;
+    color: #395D6A
+}
+
+.app-row:selected {
+    background-color: transparent;
+    color: #400B24
+}
+
+
+.app-row:hover.selected {
+    background-color: alpha(white, 0.1);
+}
+
+.app-label {
+    margin-left: 10px;
+}
+
+#app-list {
+   padding: 0 5px;
+   color: #000311;
+}
+
+
+#root-box {
+    min-width: 200px;
+}
+
+scrollbar.vertical slider {
+    background-color: alpha(white, 0.15);
+}
+
+#search {
+    background: transparent;
+    border: 0;
+    outline: unset;
+    box-shadow: inset 0px 0px 0px 1px alpha(#dc69ff, 0.5);
+    margin: 10px 5px 10px 5px;
+    font-size: 18px;
+    padding: 2px 8px;
+}
+
+selection {
+    background-color: alpha(#dc69ff, 0.5);
+} 
