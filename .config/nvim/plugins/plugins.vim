@@ -92,6 +92,10 @@ call plug#begin()
     "ColorScheme
     Plug 'morhetz/gruvbox'
     Plug 'fcpg/vim-farout'
-
+    
+    "Lsp
+    Plug 'williamboman/nvim-lsp-installer'
+    Plug 'neovim/nvim-lspconfig'
+    
 endif
 call plug#end()
