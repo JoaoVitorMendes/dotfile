@@ -140,12 +140,12 @@
 ;background = '#191724'
 gradient = 1
 gradient_count = 6
-gradient_color_1 = '#0D1A29'
-gradient_color_2 = '#304B58'
-gradient_color_3 = '#360A1C'
-gradient_color_4 = '#44091F'
-gradient_color_5 = '#29091A'
-gradient_color_6 = '#8E081E'
+gradient_color_1 = '#502015'
+gradient_color_2 = '#331E19'
+gradient_color_3 = '#633B23'
+gradient_color_4 = '#864F2F'
+gradient_color_5 = '#693E25'
+gradient_color_6 = '#433A31'
 
 
 
