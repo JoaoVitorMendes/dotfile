@@ -1,0 +1,93 @@
+[aws]
+style = "italic #A6583C"
+symbol = "  "
+
+[buf]
+style = "italic #A6583C"
+symbol = " "
+
+[c]
+style = "italic #A6583C"
+symbol = " "
+
+[conda]
+style = "italic #A6583C"
+symbol = " "
+
+[dart]
+style = "italic #A6583C"
+symbol = " "
+
+[directory]
+style = "italic #A6583C"
+read_only = " "
+
+[docker_context]
+style = "italic #A6583C"
+symbol = " "
+
+[elixir]
+style = "italic #A6583C"
+symbol = " "
+
+[elm]
+style = "italic #A6583C"
+symbol = " "
+
+[git_branch]
+style = "italic #A6583C"
+symbol = " "
+
+[golang]
+style = "italic #A6583C"
+symbol = " "
+
+[haskell]
+style = "italic #A6583C"
+symbol = " "
+
+[hg_branch]
+style = "italic #A6583C"
+symbol = " "
+
+[java]
+style = "italic #A6583C"
+symbol = " "
+
+[julia]
+style = "italic #A6583C"
+symbol = " "
+
+[memory_usage]
+style = "italic #A6583C"
+symbol = " "
+
+[nim]
+style = "italic #A6583C"
+symbol = " "
+
+[nix_shell]
+style = "italic #A6583C"
+symbol = " "
+
+[nodejs]
+style = "italic #A6583C"
+symbol = " "
+
+[package]
+style = "italic #A6583C"
+symbol = " "
+
+[python]
+style = "italic #A6583C"
+symbol = " "
+
+[spack]
+style = "italic #A6583C"
+symbol = "🅢 "
+
+[rust]
+style = "italic #A6583C"
+symbol = " "
+
+
