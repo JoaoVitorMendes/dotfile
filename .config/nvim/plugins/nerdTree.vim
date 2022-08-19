@@ -1,1 +1,0 @@
-nmap <C-a> :NERDTreeToggle<CR>
