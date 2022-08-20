@@ -105,6 +105,7 @@ return require('packer').startup(function()
   --- arco iris para chaves etc
   use 'frazrepo/vim-rainbow'
 
+  --- use { "catppuccin/nvim", as = "catppuccin" }
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
