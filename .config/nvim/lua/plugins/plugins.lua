@@ -94,6 +94,7 @@ return require('packer').startup(function()
   --- ColorScheme
   --- use 'morhetz/gruvbox'
   use 'fcpg/vim-farout'
+  --- use { "catppuccin/nvim", as = "catppuccin" }
 
   --- Lsp
   --- use'williamboman/nvim-lsp-installer'
@@ -105,7 +106,6 @@ return require('packer').startup(function()
   --- arco iris para chaves etc
   use 'frazrepo/vim-rainbow'
 
-  --- use { "catppuccin/nvim", as = "catppuccin" }
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
