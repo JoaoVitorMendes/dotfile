@@ -1,5 +1,5 @@
 -- Diretorios ~/.local/share/nvim || Plugins site/pack/packer/start
-
+-- instalar python-pynvim arch sudo pacman -S python-pynvim
 require("configs.settings")
 require("configs.mappings")
 require("plugins.plugins") --- Para ler o packer.vim
