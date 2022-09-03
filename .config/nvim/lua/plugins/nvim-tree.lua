@@ -80,6 +80,8 @@
   },
 })
 
+--- For more settings use :help nvim-tree section highlight
+
 vim.cmd([[ highlight NvimTreeFolderName guifg=#7C2F1E gui=bold,italic ]])
 vim.cmd([[ highlight NvimTreeOpenedFolderName guifg=#968773 gui=bold,italic ]])
 vim.cmd([[ highlight NvimTreeFolderIcon guifg=#5F2518 gui=bold,italic ]])
