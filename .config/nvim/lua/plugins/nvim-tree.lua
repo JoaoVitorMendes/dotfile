@@ -80,4 +80,10 @@
   },
 })
 
+vim.cmd([[ highlight NvimTreeFolderName guifg=#7C2F1E gui=bold,italic ]])
+vim.cmd([[ highlight NvimTreeOpenedFolderName guifg=#968773 gui=bold,italic ]])
+vim.cmd([[ highlight NvimTreeFolderIcon guifg=#5F2518 gui=bold,italic ]])
+vim.cmd([[ highlight NvimTreeEmptyFolderName guifg=#A69460 gui=bold,italic ]])
+vim.cmd([[ highlight NvimTreeIndentMarker guifg=#968773 ]])
+
 vim.cmd([[ map <C-a> :NvimTreeToggle <CR> ]])
