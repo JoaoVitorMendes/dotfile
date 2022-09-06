@@ -1,3 +1,8 @@
-vim.cmd([[ set bg=dark ]])
-vim.cmd([[ set termguicolors ]])
-vim.cmd([[ colorscheme farout ]])
+vim.cmd [[
+try
+  colorscheme farout
+catch /^Vim\%((\a\+)\)\=:E185/
+  colorscheme default
+  set background=dark
+endtry
+]]
