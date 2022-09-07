@@ -76,17 +76,6 @@ font_Size = 12,
       'silver',
     },
 
-    brights = {
-      'grey',
-      'red',
-      'lime',
-      'yellow',
-      'blue',
-      'fuchsia',
-      'aqua',
-      'white',
-    },
-
     tab_bar = {
       inactive_tab_edge = '#575757',
       background = '#0F0908',
@@ -123,11 +112,6 @@ font_Size = 12,
     
     active_titlebar_bg = '#0F0908',
     inactive_titlebar_bg = '#ccc',
-  },
-
-  inactive_pane_hsb = {
-    saturation = 10.9,
-    brightness = 110.8,
   },
 
   --- Setar Opacidade
