@@ -15,7 +15,7 @@
 --- Super-N
 
 --- Split horizontally/vertically
---- Ctrl-Shift-Alt-% and Ctrl-Shift-Alt-
+--- Ctrl-Shift-Alt-% and Ctrl-Shift-Alt-"
 --- mover entre eles Ctrl-Shift-cima-baixo-esquerdo-direito
 
 --- Nova Tab
