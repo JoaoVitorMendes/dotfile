@@ -196,6 +196,10 @@ return packer.startup(function(use)
 
 	--- Css color
 	use 'norcalli/nvim-colorizer.lua'
+	
+	-- Configurar ainda
+	-- Css selectror
+	use 'uga-rosa/ccc.nvim'
 
 	--- arco iris para chaves etc
 	use 'frazrepo/vim-rainbow'
