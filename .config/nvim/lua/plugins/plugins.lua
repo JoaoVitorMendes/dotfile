@@ -178,6 +178,9 @@ return packer.startup(function(use)
 
 	--- HTML tag matching
 	use 'gregsexton/MatchTag'
+		
+	--- Emmet
+	use 'mattn/emmet-vim'
 
 	--- Track the engine.
 	use 'SirVer/ultisnips'
