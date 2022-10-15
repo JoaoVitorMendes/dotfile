@@ -1,3 +1,7 @@
+/* 
+  Esse arquivo deve ser colocado na home e ser baixado os server usando npm, lspconfig
+/*
+
 {
   "compilerOptions": {
     "module": "commonjs",
