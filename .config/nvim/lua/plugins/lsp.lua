@@ -46,6 +46,7 @@ capabilities.textDocument.completion.completionItem.resolveSupport = {
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
 vim.lsp.diagnostic.on_publish_diagnostics, {
+	update_in_insert = true, -- Enable in execution
 	underline = false, -- Enable underline, use default values
 	virtual_text = false -- Enable virtual text only on Warning or above, override spacing to 2
 }
