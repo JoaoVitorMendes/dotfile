@@ -3,9 +3,9 @@ local lspconfig = require 'lspconfig'
 --- Document highlights
 local function document_highlight()
 	vim.api.nvim_exec([[
-		hi LspReferenceRead  guibg=#121111 guifg=#00FF00
-		hi LspReferenceText  guibg=#121111 guifg=#00FF00
-		hi LspReferenceWrite guibg=#121111 guifg=#00FF00
+		hi LspReferenceRead  guibg=#121111 guifg=#43251A
+		hi LspReferenceText  guibg=#121111 guifg=#43251A
+		hi LspReferenceWrite guibg=#121111 guifg=#9B3A24
 		augroup lsp_document_highlight
 			autocmd!
 			autocmd CursorHold  <buffer> lua vim.lsp.buf.document_highlight()
@@ -52,8 +52,8 @@ vim.lsp.diagnostic.on_publish_diagnostics, {
 )
 
 
-------------
 
+--- lua {{{
 
 require'lspconfig'.sumneko_lua.setup {
 --	cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"};
@@ -76,8 +76,88 @@ require'lspconfig'.sumneko_lua.setup {
 				library = {
 					[vim.fn.expand('$VIMRUNTIME/lua')] = true,
 					[vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true,
+					vim.api.nvim_get_runtime_file("", true),
 				},
 			},
 		},
 	},
 }
+
+--- }}}
+
+--- Javascript {{{
+--- npm install -g typescript typescript-language-server
+
+local root_pattern = lspconfig.util.root_pattern
+require'lspconfig'.tsserver.setup {
+	root_dir = root_pattern("package.json"),
+	cmd = { "typescript-language-server", "--stdio" },
+	filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
+	init_options = { hostInfo = "neovim" },
+}
+
+--- }}}
+
+--- html {{{
+
+---local capabilities = vim.lsp.protocol.make_client_capabilities()
+---capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+require'lspconfig'.html.setup {
+	capabilities = capabilities,
+    cmd = { "vscode-html-language-server", "--stdio" },
+    filetypes = { "html" },
+    init_options = {
+	configurationSection = { "html", "css", "javascript" },
+	embeddedLanguages = {
+		css = true,
+		javascript = true
+  },
+	provideFormatter = true,
+	single_file_support = false
+}
+}
+
+--- }}}
+
+--- css {{{
+--- npm i -g vscode-langservers-extracted
+
+require'lspconfig'.cssls.setup {
+  capabilities = capabilities,
+  cmd = { "vscode-css-language-server", "--stdio" },
+  filetypes = { "css", "scss", "less" },
+  root_dir = root_pattern("package.json", ".git") or bufdir,
+}
+
+
+--- vimscript {{{ 
+--- npm install -g vim-language-server
+
+require'lspconfig'.vimls.setup{
+	cmd = { "vim-language-server", "--stdio" },
+	filetypes = { "vim" },
+	init_options = {
+		diagnostic = {
+		enable = true
+	},
+	indexes = {
+		count = 3,
+		gap = 100,
+		projectRootPatterns = { "runtime", "nvim", ".git", "autoload", "plugin" },
+		runtimepath = true
+	},
+	isNeovim = true,
+	iskeyword = "@,48-57,_,192-255,-#",
+	runtimepath = "",
+	suggest = {
+		fromRuntimepath = true,
+		fromVimruntime = true
+	},
+	vimruntime = ""
+	},
+	single_file_support = true
+}
+
+--- }}}
+
