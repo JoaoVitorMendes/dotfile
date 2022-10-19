@@ -3,9 +3,9 @@ local lspconfig = require 'lspconfig'
 --- Document highlights
 local function document_highlight()
 	vim.api.nvim_exec([[
-		hi LspReferenceRead  guibg=#121111 guifg=#43251A
-		hi LspReferenceText  guibg=#121111 guifg=#43251A
-		hi LspReferenceWrite guibg=#121111 guifg=#9B3A24
+		hi LspReferenceRead  guibg=#121111 guifg=#4ee84e
+		hi LspReferenceText  guibg=#121111 guifg=#4ee84e
+		hi LspReferenceWrite guibg=#121111 guifg=#4ee84e
 		augroup lsp_document_highlight
 			autocmd!
 			autocmd CursorHold  <buffer> lua vim.lsp.buf.document_highlight()
