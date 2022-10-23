@@ -1,6 +1,6 @@
 require("twilight").setup {
   dimming = {
-    alpha = 1.10, -- amount of dimming
+    alpha = 1.0, -- amount of dimming
     -- we try to get the foreground from the highlight groups or fallback color
     color = { "Insert", "#43251A" },
     term_bg = "#9B3A24", -- if guibg=NONE, this will be used to calculate text color
