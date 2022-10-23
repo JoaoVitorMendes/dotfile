@@ -36,8 +36,8 @@ keymap("n","<C-v", "v", opts)
 keymap("v","<C-c>", "y", opts)
 keymap("n","<C-p>", "p", opts)
 
--- Normal mode Twilight
-keymap("n", "<C-l>", ":Twilight <CR>", opts)
+-- Normal mode ZenMode + Twilight
+keymap("n", "<C-l>", ":ZenMode <CR>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
