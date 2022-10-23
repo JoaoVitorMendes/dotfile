@@ -1,0 +1,252 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+scan_timeout = 1000
+
+[character] # The name of the module we are configuring is "character"
+success_symbol = "[ ](bold #401612)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
+error_symbol = "[✗](bold #A6583C)"
+
+
+[aws]
+style = "italic #A6583C"
+symbol = "  "
+
+[buf]
+style = "italic #A6583C"
+symbol = " "
+
+[c]
+style = "italic #A6583C"
+symbol = " "
+
+[conda]
+style = "italic #A6583C"
+symbol = " "
+
+[dart]
+style = "italic #A6583C"
+symbol = " "
+
+[directory]
+style = "italic #A6583C"
+read_only = " "
+truncation_length = 1
+truncation_symbol = " "
+home_symbol =  ""
+
+
+
+[docker_context]
+style = "italic #A6583C"
+symbol = " "
+
+[elixir]
+style = "italic #A6583C"
+symbol = " "
+
+[elm]
+style = "italic #A6583C"
+symbol = " "
+
+[git_branch]
+style = "italic #A6583C"
+symbol = " "
+
+[golang]
+style = "italic #A6583C"
+symbol = " "
+
+[haskell]
+style = "italic #A6583C"
+symbol = " "
+
+[hg_branch]
+style = "italic #A6583C"
+symbol = " "
+
+[lua]
+style = "italic #A6583C"
+symbol = " "
+
+[java]
+style = "italic #A6583C"
+symbol = " "
+
+[julia]
+style = "italic #A6583C"
+symbol = " "
+
+[memory_usage]
+style = "italic #A6583C"
+symbol = " "
+
+[nim]
+style = "italic #A6583C"
+symbol = " "
+
+[nix_shell]
+style = "italic #A6583C"
+symbol = " "
+
+[nodejs]
+detect_extensions = ["mjs", "cjs", "mts", "cts"]
+style = "italic #A6583C"
+symbol = " "
+
+[package]
+style = "italic #A6583C"
+symbol = " "
+
+[python]
+style = "italic #A6583C"
+symbol = " "
+
+[spack]
+style = "italic #A6583C"
+symbol = "🅢 "
+
+[rust]
+style = "italic #A6583C"
+symbol = " "
+
+
+[shell]
+fish_indicator = ""
+
+[username]
+style_user = "white bold"
+style_root = "blue bold"
+format = "[$user]($style) "
+disabled = true
+show_always = true
+
+
+
+[custom.vim]
+command = "time /T"
+detect_extensions = ["vim"] # filters *.vim files
+style = "italic #A6583C"
+symbol = " "
+
+[custom.js]
+command = "time /T"
+detect_extensions = ["js"] # filters *.js files
+style = "italic #A6583C"
+symbol = " "
+
+[custom.ts]
+command = "time /T"
+detect_extensions = ["ts"] # filters *.ts files
+style = "italic #A6583C"
+symbol = "ﯤ "
+
+[custom.css]
+command = "time /T"
+detect_extensions = ["css"] # filters *.css files
+style = "italic #A6583C"
+symbol = " "
+
+[custom.html]
+command = "time /T"
+detect_extensions = ["html"] # filters *.html files
+style = "italic #A6583C"
+symbol = " "
+
+[custom.conf]
+command = "time /T"
+detect_extensions = ["conf"] # filters *.conf files
+style = "italic #A6583C"
+symbol = " "
+
+[custom.fish]
+command = "time /T"
+detect_extensions = ["fish"] # filters *.fish files
+style = "italic #A6583C"
+symbol = " "
+
+
+[custom.image]
+command = "time /T"
+detect_extensions = ["png", "jpg", "jpeg"] # filters imagen files
+style = "italic #A6583C"
+symbol = " "
+
+[custom.svg]
+command = "time /T"
+detect_extensions = ["svg"] # filters #.svg files
+style = "italic #A6583C"
+symbol = "ﰟ "
+
+[custom.compressed]
+command = "time /T"
+detect_extensions = ["bz2", "tar", "arj", "cab", "rar", "z", "gz", "taz", "tgz", "zip"] # filters compressed files
+style = "italic #A6583C"
+symbol = " "
+
+[custom.bin]
+command = "time /T"
+detect_extensions = ["bin"] # filters *.bin files
+style = "italic #A6583C"
+symbol = " "
+
+[custom.appimage]
+command = "time /T"
+detect_extensions = ["AppImage"] # filters *.AppImage files
+style = "italic #A6583C"
+symbol = " "
+
+[custom.mask]
+command = "time /T"
+detect_extensions = ["mask"] # filters *.mask files
+style = "italic #A6583C"
+symbol = "  ﴣ"
+
+[custom.dist]
+command = "time /T"
+detect_extensions = ["dist_0000"] # filters *.dist_0000 files
+style = "italic #A6583C"
+symbol = " "
+
+[custom.src]
+command = "time /T"
+detect_folders = ["src"] # filters source folders
+style = "italic #A6583C"
+symbol = " "
+
+[custom.imgfolder]
+command = "time /T"
+detect_folders = ["img"] # filters img folders
+style = "italic #A6583C"
+symbol = " "
+
+[custom.download]
+command = "time /T"
+detect_folders = ["download", "downloads", "Download", "Downloads"] # filters downloads folders
+style = "italic #A6583C"
+symbol = " "
+
+[custom.settings]
+command = "time /T"
+detect_folders = ["settings", "config"] # filters settings folders
+style = "italic #A6583C"
+symbol = " "
+
+[custom.htmlfolder]
+command = "time /T"
+detect_folders = ["html"] # filters html folders
+style = "italic #A6583C"
+symbol = " "
+
+[custom.cssfolder]
+command = "time /T"
+detect_folders = ["css"] # filters css folders
+style = "italic #A6583C"
+symbol = " "
+
+
+[custom.gentoo]
+command = "time /T"
+detect_folders = ["package.mask", "package.use", "repos.conf", "package.accept_keywords"] # filters gentoo folders
+style = "italic #A6583C"
+symbol = " "
+
