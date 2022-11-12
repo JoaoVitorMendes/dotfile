@@ -25,19 +25,12 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
--- Normal mode NvimTree
-keymap("n", "<C-n>", ":NvimTreeToggle <CR>", opts)
-
-
 -- Normal Map neovim
 -- Copy and past
 keymap("n","<C-a>", "ggVG", opts)
 keymap("n","<C-v", "v", opts)
 keymap("v","<C-c>", "y", opts)
 keymap("n","<C-p>", "p", opts)
-
--- Normal mode ZenMode + Twilight
-keymap("n", "<C-l>", ":ZenMode <CR>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
@@ -56,6 +49,15 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 -- Insert --
 -- Press jk fast to exit insert mode 
 keymap("i", "jk", "<ESC>", opts)
+
+-- Normal mode NvimTree
+keymap("n", "<C-n>", ":NvimTreeToggle <CR>", opts)
+
+-- Normal mode ZenMode + Twilight
+keymap("n", "<C-l>", ":ZenMode <CR>", opts)
+
+-- normal mode rename
+keymap("n", "<C-r>", ":IncRename ", opts)
 
 -- Visual --
 -- Stay in indent mode
